@@ -1,0 +1,42 @@
+.btn-success:hover {
+  background-color: red;
+}
+canvas {
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  from {
+    box-shadow: 1px 1px 38px red;
+  }
+  to {
+    box-shadow: 1px 1px 38px yellow;
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family: cursive;
+}
+body{
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+}
+.content{
+position: relative;  
+}
+.content h2{
+color: #ffffff;
+font-size: 4em;
+position: absolute;
+transform: translate(-50%,-50%);  
+}
+.content h2:nth-child(1){
+color: transparent;
+-webkit-text-stroke: 2px rgb(117, 0, 251);  
+}
